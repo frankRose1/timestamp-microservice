@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/', routes);
 
 app.listen(3000, () => {
-    console.log('👍👍It is working');
+    console.log('👍 👍  It is working');
 });
 
 module.exports = app;

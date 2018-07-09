@@ -1,5 +1,11 @@
 extends layout
 
 block content
-    h1 Testing Testing testing
-    p welcome to microsrvice
+    h1 Timestamp MicroService
+    p Pass in either a unix timestamp or a timestamp following ISO-8601 (e.g. "2016-11-20")
+    h3 Example Usage:
+    code localhost:3000/api/timestamp/2018-07-09
+    br
+    code localhost:3000/api/timestamp/1531100236
+    h3  Example Output:
+    code { "unix": 1531100236, "utc": "Mon, 09 Jul 2018 01:37:16 GMT"}
