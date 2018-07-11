@@ -10,6 +10,8 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(express.static(__dirname + '/public'))
+
 app.use(cors());
 // Takes the raw requests and turns them into usable properties on req.body
 app.use(bodyParser.json());
