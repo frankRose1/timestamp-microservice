@@ -4,11 +4,11 @@ block content
     .container
         .timestamp-container
             h1= title
-            p Pass in either a unix timestamp or a timestamp following ISO-8601 (e.g. "2016-11-20")
+            p Pass in either a unix timestamp or a date following ISO-8601 (e.g. "2016-11-20")
+            p If a timestamp is not provided, todays date is used as a default
             h3 Example Usage:
-            code localhost:3000/api/timestamp/2018-07-09
-            br
-            code localhost:3000/api/timestamp/1531100236
+            a(href="/api/timestamp/2018-07-09" target="_blank") /api/timestamp/2018-07-09
+            a(href="/api/timestamp/1531100236" target="_blank") /api/timestamp/1531100236
             h3  Example Output:
             code { "unix": 1531100236, "utc": "Mon, 09 Jul 2018 01:37:16 GMT"}
             h2.technologies Technologies Used: Node, Express, HTML, CSS, JavaScript

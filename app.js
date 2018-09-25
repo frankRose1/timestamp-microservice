@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const routes = require('./routes/index');
 const path = require('path');
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -17,11 +18,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-//routes go after all middleware
 app.use('/', routes);
 
-app.listen(3000, () => {
-    console.log('👍 👍  It is working');
+app.listen(port, () => {
+    console.log(`👍 👍  Server is running on port ${port}`);
 });
 
 module.exports = app;

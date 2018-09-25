@@ -6,6 +6,24 @@ body {
    color: #222;
 }
 
+a {
+    text-decoration: none;
+    color: #222;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    margin: 10px auto;
+    display: block;
+    max-width: 300px;
+    transition: all 0.3s ease-in;
+}
+
+a:hover {
+    background-color: #345678;
+    color: #fff;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
